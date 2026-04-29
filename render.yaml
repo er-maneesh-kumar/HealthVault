@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: doc-plus-backend
+    env: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGO
+        sync: false
+      - key: PORT
+        value: 8000

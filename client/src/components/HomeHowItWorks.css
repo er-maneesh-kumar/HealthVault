@@ -1,0 +1,107 @@
+/* ─── How It Works ───────────────────────────────────────── */
+.home-how-section {
+  padding: 96px 40px 60px;
+  background: linear-gradient(180deg, #ffffff 0%, #eef5ff 100%);
+}
+
+.home-how-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+  max-width: 1100px;
+  margin: 0 auto 64px;
+  position: relative;
+}
+
+.home-how-card {
+  flex: 1;
+  min-width: 200px;
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 36px 20px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 20px;
+  margin: 8px;
+  box-shadow: 0 4px 24px rgba(7, 0, 59, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-how-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 48px rgba(42, 167, 255, 0.15);
+}
+
+.home-how-num {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #e8f0ff;
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  line-height: 1;
+}
+
+.home-how-icon {
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+  filter: drop-shadow(0 4px 8px rgba(42, 167, 255, 0.3));
+}
+
+.home-how-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #07003B;
+  margin-bottom: 10px;
+}
+
+.home-how-card p {
+  font-size: 0.88rem;
+  color: #5a6479;
+  line-height: 1.6;
+}
+
+.home-how-arrow {
+  position: absolute;
+  right: -28px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.6rem;
+  color: #2AA7FF;
+  font-weight: 700;
+  z-index: 2;
+}
+
+.home-how-img-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 16px;
+}
+
+.home-how-img {
+  max-width: 480px;
+  max-height: 380px;
+  width: 90%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 24px;
+  box-shadow: 0 16px 48px rgba(7, 0, 59, 0.12);
+  transition: transform 0.4s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.home-how-img:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .home-how-arrow { display: none; }
+  .home-how-section { padding: 60px 20px 40px; }
+}

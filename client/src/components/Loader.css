@@ -1,0 +1,19 @@
+.loaderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.spinner {
+    border-style: solid;
+    border-color: rgba(20, 100, 255, 0.2);
+    border-top-color: #1464FF; /* Doc-Plus blue */
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}

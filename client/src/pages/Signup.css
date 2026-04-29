@@ -1,0 +1,387 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: 'PT Sans', sans-serif; */
+}
+
+.body {
+    /* background-image: url('https://res.cloudinary.com/djoebsejh/image/upload/v1713763409/gdl4pudaw2sx8s97yumk.jpg'); */
+    /* background-image: url('https://cdn.pixabay.com/photo/2017/03/29/11/29/nepal-2184940_1280.jpg'); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+    display: flex;
+    min-height: 90vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    /* backdrop-filter: blur(25px); */
+    /* background: #f8feff; */
+    background: #070027;
+
+}
+
+.MainContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    /* padding: 20px; */
+    text-align: center;
+}
+
+/* Animated Blob Container */
+.blob-section {
+    position: absolute;
+    width: 100%;
+    max-width: 500px;
+    /* Adjust as needed */
+    height: 300px;
+    /* Adjust the height of the blob container */
+    margin-bottom: 30px;
+}
+
+.animated-blob {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-100%, -40%);
+    width: 100%;
+    height: auto;
+
+}
+
+.animated-blob1 {
+    position: absolute;
+
+    transform: scale(2.9);
+    transform: translate(100%, 70%);
+}
+
+.animated-blob2 {
+    position: absolute;
+
+    transform: rotate(45deg);
+    /* Rotate the blob */
+    transform: translate(-40%, 50%);
+}
+
+.animated-blob3 {
+    position: absolute;
+
+    transform: scale(3);
+    transform: translate(100%, -50%);
+}
+
+.introTextContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* height: 75vh; */
+    width: 400px;
+    background: rgb(30 49 90 / 20%);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    margin: 0 20px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.introTextContainer>h1 {
+    font-size: 0.2em;
+    margin: 30px 5px 20px;
+}
+
+.introTextContainer>h3 {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    font-size: 0.2em;
+    margin: 5px 5px 5px 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.introTextContainer>h4 {
+    font-size: 0.14em;
+    margin: 30px 5px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.citizen-bar,
+.doctor-bar,
+.hospital-bar {
+    width: 50%;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.15em;
+    padding: 5px 20px;
+    margin: 5px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.glowing-border {
+    border: 2.5px solid transparent;
+    transition: border-color 0.25s ease-in-out;
+}
+
+.glowing-border.active {
+    border-color: #d9e9ff;
+    background-color: rgba(146, 179, 255, 0.15);
+}
+
+
+.Loginlink {
+    color: rgb(133, 241, 255);
+    margin: 0 3px;
+}
+
+.loginContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* height: 75vh; */
+    width: 400px;
+    background: rgb(30 49 90 / 20%);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    margin: 0 20px;
+}
+
+.loginContainer form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.welcometext {
+    margin: 20px 30px;
+    margin-top: 30px;
+    font-size: 0.35em;
+    text-align: center;
+    color: #ffffff;
+}
+
+.sign-up-input {
+    display: flex;
+    width: 300px;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #ffffff29;
+    border: none;
+    color: #fff;
+    font-size: 0.14em;
+    /* letter-spacing:normal; */
+    letter-spacing: 1.5px;
+}
+
+.sign-up-input::placeholder {
+    color: rgba(245, 245, 245, 0.726);
+    font-weight: 200;
+    letter-spacing: 1.5px;
+}
+
+.sign-up-input:focus {
+    border: none;
+    outline: 3px solid rgba(197, 197, 197, 0.712);
+}
+
+.error {
+    color: rgb(255, 0, 0);
+    font-size: 14px;
+    margin-top: 5px;
+    padding: 0 20px;
+    letter-spacing: 1px;
+}
+
+.sign-up-input.error {
+    border-color: red;
+}
+
+@keyframes btn-spin {
+    to { transform: rotate(360deg); }
+}
+
+.signup {
+    margin: 15px 10px;
+    padding: 12px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 20px;
+    border: none;
+    color: rgb(240, 240, 240);
+    letter-spacing: 1px;
+    font-size: 0.16em;
+    background: linear-gradient(to right, rgb(7, 55, 189), rgb(42, 128, 235));
+    cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.15s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.signup:hover:not(:disabled) {
+    opacity: 0.9;
+    transform: scale(1.03);
+}
+
+.signup:disabled {
+    opacity: 0.75;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Spinner inside button */
+.btn-spinner {
+    width: 1em;
+    height: 1em;
+    border: 2px solid rgba(255,255,255,0.35);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: btn-spin 0.7s linear infinite;
+    flex-shrink: 0;
+}
+
+.or {
+    justify-content: center;
+    font-size: 0.15em;
+    margin: 10px 5px 10px 9px;
+    /* background: rgba(255, 255, 255, 0.15); */
+    text-align: center;
+}
+
+.dividerLine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5px;
+    /* margin-bottom: 15px; */
+    border-radius: 25px;
+    background: linear-gradient(to right, rgb(7, 55, 189), rgb(42, 128, 235));
+}
+.divider1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5px;
+    border-radius: 25px;
+    background: linear-gradient(to left, rgb(7, 55, 189), rgb(42, 128, 235));
+}
+.social {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    /* background-color: #3962f54f; */
+
+}
+
+.social img {
+    display: flex;
+    position: relative;
+    margin: 10px;
+    height: 25px;
+    width: 25px;
+}
+
+.social .social-icons {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff20;
+    margin: 5px;
+    padding: 0 20px;
+    border-radius: 10px;
+    width: 300px;
+    /* opacity: 0.7; */
+}
+
+.social-icons h4 {
+    /* text-decoration: overline; */
+    font-size: 0.12em;
+    list-style: none;
+    color: #fff;
+    margin: auto;
+    letter-spacing: 0.15em;
+}
+
+@media screen and (max-width: 960px) {
+    .body {
+        font-size: 80px; /* Base scale down */
+        padding: 10px;
+    }
+    .MainContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .loginContainer, .introTextContainer {
+        width: 100%;
+        max-width: 380px;
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+    .introTextContainer > h1 {
+        font-size: 0.25em;
+    }
+    .sign-up-input {
+        width: 90%;
+        max-width: 320px;
+        font-size: 0.2em;
+        padding: 15px 20px;
+    }
+    .signup {
+        width: 90%;
+        max-width: 320px;
+        font-size: 0.22em;
+        padding: 15px 20px;
+    }
+    .animated-blob,
+    .animated-blob3,
+    .animated-blob2,
+    .animated-blob1 {
+        display: none; /* Turn off big shapes for small screens to prevent overlap/scrolling issues */
+    }
+    .blob-section {
+        display: none;
+    }
+}

@@ -1,0 +1,192 @@
+[
+  {
+    "h_id": "H001",
+    "name": "Apollo General Hospital",
+    "avatar": "https://ui-avatars.com/api/?name=Apollo+General+Hospital&background=0D6EFD&color=fff&size=200",
+    "location": {
+      "address": "21 Greams Lane",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "country": "India"
+    },
+    "contact": {
+      "phone": "+91-44-28293333",
+      "email": "contact@apollochennai.com"
+    },
+    "rating": 4.8,
+    "rooms": [{ "total": 500, "available": 80 }],
+    "facilities": ["ICU", "Emergency", "Pharmacy", "Lab", "Radiology", "Blood Bank"],
+    "specialties": ["Cardiology", "Neurology", "Oncology", "Orthopedics"]
+  },
+  {
+    "h_id": "H002",
+    "name": "Fortis Memorial Hospital",
+    "avatar": "https://ui-avatars.com/api/?name=Fortis+Memorial+Hospital&background=198754&color=fff&size=200",
+    "location": {
+      "address": "Sector B, Pocket 1",
+      "city": "Gurugram",
+      "state": "Haryana",
+      "country": "India"
+    },
+    "contact": {
+      "phone": "+91-124-4921021",
+      "email": "info@fortismemorail.com"
+    },
+    "rating": 4.6,
+    "rooms": [{ "total": 350, "available": 45 }],
+    "facilities": ["ICU", "Emergency", "Pharmacy", "Lab", "MRI", "Physiotherapy"],
+    "specialties": ["Cardiology", "Gastroenterology", "Rheumatology", "Pediatrics"]
+  },
+  {
+    "h_id": "H003",
+    "name": "AIIMS New Delhi",
+    "avatar": "https://ui-avatars.com/api/?name=AIIMS+New+Delhi&background=DC3545&color=fff&size=200",
+    "location": {
+      "address": "Sri Aurobindo Marg",
+      "city": "New Delhi",
+      "state": "Delhi",
+      "country": "India"
+    },
+    "contact": {
+      "phone": "+91-11-26588500",
+      "email": "director@aiims.edu"
+    },
+    "rating": 4.9,
+    "rooms": [{ "total": 1200, "available": 150 }],
+    "facilities": ["ICU", "Emergency", "Trauma Center", "Pharmacy", "Lab", "Radiology", "Blood Bank", "NICU"],
+    "specialties": ["Cardiology", "Neurology", "Pulmonology", "Endocrinology", "Orthopedics", "Oncology"]
+  },
+  {
+    "h_id": "H004",
+    "name": "Manipal Hospital",
+    "avatar": "https://ui-avatars.com/api/?name=Manipal+Hospital&background=FFC107&color=000&size=200",
+    "location": {
+      "address": "98 HAL Airport Road",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "country": "India"
+    },
+    "contact": {
+      "phone": "+91-80-25023456",
+      "email": "info@manipalhospital.org"
+    },
+    "rating": 4.5,
+    "rooms": [{ "total": 600, "available": 70 }],
+    "facilities": ["ICU", "Emergency", "Pharmacy", "Lab", "CT Scan", "Dialysis", "Physiotherapy"],
+    "specialties": ["Dermatology", "Ophthalmology", "Gastroenterology", "Pulmonology"]
+  },
+  {
+    "h_id": "H005",
+    "name": "Kokilaben Dhirubhai Ambani Hospital",
+    "avatar": "https://ui-avatars.com/api/?name=Kokilaben+Hospital&background=6F42C1&color=fff&size=200",
+    "location": {
+      "address": "Rao Saheb Achutrao Patwardhan Marg",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India"
+    },
+    "contact": {
+      "phone": "+91-22-30999999",
+      "email": "contact@kokilabenhospital.com"
+    },
+    "rating": 4.7,
+    "rooms": [{ "total": 750, "available": 95 }],
+    "facilities": ["ICU", "Emergency", "Robotic Surgery", "Pharmacy", "Lab", "MRI", "PET Scan", "Blood Bank"],
+    "specialties": ["Cardiology", "Neurology", "Orthopedics", "Pediatrics", "Oncology"]
+  },
+  {
+    "h_id": "H006",
+    "name": "Medanta The Medicity",
+    "avatar": "https://ui-avatars.com/api/?name=Medanta+Medicity&background=0DCAF0&color=000&size=200",
+    "location": {
+      "address": "CH Baktawar Singh Road",
+      "city": "Gurugram",
+      "state": "Haryana",
+      "country": "India"
+    },
+    "contact": {
+      "phone": "+91-124-4141414",
+      "email": "info@medanta.org"
+    },
+    "rating": 4.8,
+    "rooms": [{ "total": 1250, "available": 200 }],
+    "facilities": ["ICU", "Emergency", "Bone Marrow Transplant", "Pharmacy", "Lab", "Radiology", "Hyperbaric Chamber"],
+    "specialties": ["Cardiology", "Neurology", "Endocrinology", "Rheumatology", "Gastroenterology"]
+  },
+  {
+    "h_id": "H007",
+    "name": "Christian Medical College",
+    "avatar": "https://ui-avatars.com/api/?name=Christian+Medical+College&background=20C997&color=000&size=200",
+    "location": {
+      "address": "Ida Scudder Road",
+      "city": "Vellore",
+      "state": "Tamil Nadu",
+      "country": "India"
+    },
+    "contact": {
+      "phone": "+91-416-2281000",
+      "email": "webmaster@cmcvellore.ac.in"
+    },
+    "rating": 4.9,
+    "rooms": [{ "total": 2500, "available": 300 }],
+    "facilities": ["ICU", "Emergency", "Trauma Center", "Pharmacy", "Lab", "Radiology", "Blood Bank", "NICU", "Organ Transplant"],
+    "specialties": ["Cardiology", "Neurology", "Pediatrics", "Dermatology", "Ophthalmology", "Pulmonology"]
+  },
+  {
+    "h_id": "H008",
+    "name": "Narayana Health City",
+    "avatar": "https://ui-avatars.com/api/?name=Narayana+Health+City&background=FD7E14&color=fff&size=200",
+    "location": {
+      "address": "258/A Bommasandra Industrial Area",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "country": "India"
+    },
+    "contact": {
+      "phone": "+91-80-71222222",
+      "email": "contact@narayanahealth.org"
+    },
+    "rating": 4.6,
+    "rooms": [{ "total": 1000, "available": 120 }],
+    "facilities": ["ICU", "Emergency", "Cardiac Cath Lab", "Pharmacy", "Lab", "MRI", "Dialysis", "Blood Bank"],
+    "specialties": ["Cardiology", "Orthopedics", "Gastroenterology", "Pediatrics"]
+  },
+  {
+    "h_id": "H009",
+    "name": "Tata Memorial Hospital",
+    "avatar": "https://ui-avatars.com/api/?name=Tata+Memorial+Hospital&background=6EA8FE&color=000&size=200",
+    "location": {
+      "address": "Dr E Borges Road, Parel",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India"
+    },
+    "contact": {
+      "phone": "+91-22-24177000",
+      "email": "director@tmc.gov.in"
+    },
+    "rating": 4.8,
+    "rooms": [{ "total": 600, "available": 60 }],
+    "facilities": ["ICU", "Emergency", "Chemotherapy Unit", "Pharmacy", "Lab", "Radiology", "PET CT", "Blood Bank"],
+    "specialties": ["Oncology", "Radiology", "Pathology", "Pediatrics"]
+  },
+  {
+    "h_id": "H010",
+    "name": "NIMHANS",
+    "avatar": "https://ui-avatars.com/api/?name=NIMHANS&background=A78BFA&color=fff&size=200",
+    "location": {
+      "address": "Hosur Road",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "country": "India"
+    },
+    "contact": {
+      "phone": "+91-80-46110007",
+      "email": "director@nimhans.ac.in"
+    },
+    "rating": 4.7,
+    "rooms": [{ "total": 800, "available": 110 }],
+    "facilities": ["ICU", "Emergency", "Neuroimaging", "Pharmacy", "Lab", "EEG Lab", "Psychiatric Ward"],
+    "specialties": ["Neurology", "Psychiatry", "Neurosurgery", "Psychology"]
+  }
+]

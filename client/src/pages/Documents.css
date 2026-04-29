@@ -1,0 +1,110 @@
+.documents-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+  }
+  
+  .document-options {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .document-option {
+    flex: 1;
+    margin: 0 10px;
+    width: 45%; /* Adjusted width to fit two options per row */
+  }
+  
+  .option-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .option-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .option-card h2 {
+    color: #007bff;
+    font-size: 1.5rem;
+  }
+  
+  .option-card p {
+    color: #666;
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .image-section h3 {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+  }
+  
+  .images-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* Ensure images wrap to new line if space is limited */
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .images-container img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .images-container img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .custom-lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+  }
+  
+  .custom-lightbox img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 8px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+  

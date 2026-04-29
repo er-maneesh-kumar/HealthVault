@@ -1,0 +1,92 @@
+[
+  {
+      "d_id": "D001",
+      "d_name": "Dr. Samantha Johnson",
+      "d_age": 40,
+      "d_qualifications": "MD, MBBS",
+      "d_gender": "Female",
+      "d_specialization": "Rheumatology",
+      "d_hospital": "Hospital Q"
+  },
+  {
+      "d_id": "D002",
+      "d_name": "Dr. Michael Smith",
+      "d_age": 45,
+      "d_qualifications": "MD, MBBS",
+      "d_gender": "Male",
+      "d_specialization": "Cardiology",
+      "d_hospital": "Hospital R"
+  },
+  {
+      "d_id": "D003",
+      "d_name": "Dr. Emily Brown",
+      "d_age": 38,
+      "d_qualifications": "MD, MBBS",
+      "d_gender": "Female",
+      "d_specialization": "Neurology",
+      "d_hospital": "Hospital S"
+  },
+  {
+      "d_id": "D004",
+      "d_name": "Dr. Christopher Wilson",
+      "d_age": 42,
+      "d_qualifications": "MD, MBBS",
+      "d_gender": "Male",
+      "d_specialization": "Orthopedics",
+      "d_hospital": "Hospital T"
+  },
+  {
+      "d_id": "D005",
+      "d_name": "Dr. Jennifer Martinez",
+      "d_age": 39,
+      "d_qualifications": "MD, MBBS",
+      "d_gender": "Female",
+      "d_specialization": "Ophthalmology",
+      "d_hospital": "Hospital U"
+  },
+  {
+      "d_id": "D006",
+      "d_name": "Dr. David Garcia",
+      "d_age": 47,
+      "d_qualifications": "MD, MBBS",
+      "d_gender": "Male",
+      "d_specialization": "Dermatology",
+      "d_hospital": "Hospital V"
+  },
+  {
+      "d_id": "D007",
+      "d_name": "Dr. Jessica Miller",
+      "d_age": 41,
+      "d_qualifications": "MD, MBBS",
+      "d_gender": "Female",
+      "d_specialization": "Gastroenterology",
+      "d_hospital": "Hospital W"
+  },
+  {
+      "d_id": "D008",
+      "d_name": "Dr. Matthew Taylor",
+      "d_age": 44,
+      "d_qualifications": "MD, MBBS",
+      "d_gender": "Male",
+      "d_specialization": "Pulmonology",
+      "d_hospital": "Hospital X"
+  },
+  {
+      "d_id": "D009",
+      "d_name": "Dr. Ashley Hernandez",
+      "d_age": 37,
+      "d_qualifications": "MD, MBBS",
+      "d_gender": "Female",
+      "d_specialization": "Pediatrics",
+      "d_hospital": "Hospital Y"
+  },
+  {
+      "d_id": "D010",
+      "d_name": "Dr. William Adams",
+      "d_age": 43,
+      "d_qualifications": "MD, MBBS",
+      "d_gender": "Male",
+      "d_specialization": "Endocrinology",
+      "d_hospital": "Hospital Z"
+  }
+]
