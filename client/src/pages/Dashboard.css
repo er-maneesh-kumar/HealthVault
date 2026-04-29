@@ -311,3 +311,243 @@
         flex-direction: column;
     }
 }
+
+/* ── Appointment Card ─────────────────────────────────────── */
+.apt-card {
+  background: #ffffff;
+  border: 1.5px solid #e8edf2;
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.apt-card:hover {
+  box-shadow: 0 4px 16px rgba(42,167,255,0.12);
+  transform: translateY(-1px);
+}
+.apt-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.apt-card-header strong {
+  font-size: 1.05em;
+  color: #1a1a2e;
+}
+.apt-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.apt-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.9em;
+  color: #555;
+}
+.apt-reason {
+  color: #777;
+  font-style: italic;
+}
+
+/* Status badges */
+.apt-status {
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.apt-status--confirmed  { background: #d4edda; color: #155724; }
+.apt-status--pending    { background: #fff3cd; color: #856404; }
+.apt-status--cancelled  { background: #f8d7da; color: #721c24; }
+.apt-status--completed  { background: #d1ecf1; color: #0c5460; }
+
+/* Icon action buttons */
+.apt-icon-btn {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.85em;
+  transition: background 0.18s ease, transform 0.15s ease;
+}
+.apt-icon-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.apt-icon-btn--share {
+  background: #e8f4fd;
+  color: #2AA7FF;
+}
+.apt-icon-btn--share:hover {
+  background: #2AA7FF;
+  color: #fff;
+  transform: scale(1.1);
+}
+.apt-icon-btn--delete {
+  background: #fdecea;
+  color: #e53935;
+}
+.apt-icon-btn--delete:hover {
+  background: #e53935;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* ── Modal overlay ────────────────────────────────────────── */
+.apt-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: apt-fade-in 0.2s ease;
+}
+@keyframes apt-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.apt-modal {
+  background: #fff;
+  border-radius: 16px;
+  padding: 36px 32px 28px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+  position: relative;
+  text-align: center;
+  animation: apt-slide-up 0.25s ease;
+}
+@keyframes apt-slide-up {
+  from { transform: translateY(24px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+.apt-modal h3 {
+  margin: 12px 0 8px;
+  font-size: 1.25em;
+  color: #1a1a2e;
+}
+.apt-modal p {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+/* Modal icon circle */
+.apt-modal-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4em;
+  margin: 0 auto 8px;
+}
+.apt-modal-icon--danger { background: #fdecea; color: #e53935; }
+.apt-modal-icon--share  { background: #e8f4fd; color: #2AA7FF; }
+
+/* Close X button for share modal */
+.apt-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.8em;
+  color: #555;
+  transition: background 0.15s;
+}
+.apt-modal-close:hover { background: #ddd; }
+
+/* Footer buttons row */
+.apt-modal-footer {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+.apt-btn {
+  padding: 10px 24px;
+  border-radius: 8px;
+  border: none;
+  font-size: 0.9em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.18s ease, transform 0.15s ease;
+}
+.apt-btn--ghost {
+  background: #f0f0f0;
+  color: #555;
+}
+.apt-btn--ghost:hover { background: #e0e0e0; }
+.apt-btn--danger {
+  background: #e53935;
+  color: #fff;
+}
+.apt-btn--danger:hover { background: #c62828; transform: scale(1.03); }
+
+/* Share preview box */
+.apt-share-preview {
+  background: #f7f9fc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.apt-share-preview pre {
+  margin: 0;
+  font-family: inherit;
+  font-size: 0.85em;
+  color: #334155;
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+
+/* Share action buttons */
+.apt-share-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.apt-share-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.88em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.18s ease, transform 0.15s ease;
+}
+.apt-share-btn:hover { opacity: 0.88; transform: scale(1.04); }
+
+.apt-share-btn--copy      { background: #e8f4fd; color: #2AA7FF; }
+.apt-share-btn--email     { background: #fdf0ff; color: #9333ea; }
+.apt-share-btn--whatsapp  { background: #e6f9ee; color: #25D366; }
+
+@media screen and (max-width: 768px) {
+  .apt-modal { padding: 28px 20px 22px; }
+  .apt-share-actions { gap: 8px; }
+  .apt-share-btn { padding: 8px 14px; font-size: 0.82em; }
+}
