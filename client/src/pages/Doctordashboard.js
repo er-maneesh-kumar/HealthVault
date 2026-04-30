@@ -11,7 +11,7 @@ function DoctorDashboard() {
   const [patientInteractions, setPatientInteractions] = useState([]);
   const [appointments, setAppointments] = useState([]);
 
-  const API_BASE = process.env.REACT_APP_API_BASE || 'http://localhost:8000';
+  const API_BASE = process.env.REACT_APP_API_BASE || (window.location.hostname === 'localhost' ? 'http://localhost:8000' : 'https://healthvault-qhqn.onrender.com');
 
   useEffect(() => {
     if (currentUser) {

@@ -44,7 +44,7 @@ function Navbar() {
       try {
         if (!currentUser) return;
 
-        const API_BASE = process.env.REACT_APP_API_BASE || 'http://localhost:8000';
+        const API_BASE = process.env.REACT_APP_API_BASE || (window.location.hostname === 'localhost' ? 'http://localhost:8000' : 'https://healthvault-qhqn.onrender.com');
         const role = currentUser.role; // 'patient' | 'doctor' | 'hospital' | 'admin'
 
         let endpointUrl = '';

@@ -7,7 +7,7 @@ import { useAuth } from '../contexts/AuthContext.js';
 import Loader from '../components/Loader';
 import { locationOutline, callOutline, arrowForwardOutline } from 'ionicons/icons';
 
-const API_BASE = process.env.REACT_APP_API_BASE || 'http://localhost:8000';
+const API_BASE = process.env.REACT_APP_API_BASE || (window.location.hostname === 'localhost' ? 'http://localhost:8000' : 'https://healthvault-qhqn.onrender.com');
 
 function Hospitaldashboard() {
   const { currentUser } = useAuth();

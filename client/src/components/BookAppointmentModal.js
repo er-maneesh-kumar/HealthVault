@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './BookAppointmentModal.css';
 
-const API_BASE = process.env.REACT_APP_API_BASE || 'http://localhost:8000';
+const API_BASE = process.env.REACT_APP_API_BASE || (window.location.hostname === 'localhost' ? 'http://localhost:8000' : 'https://healthvault-qhqn.onrender.com');
 
 export default function BookAppointmentModal({ isOpen, onClose, doctors, patient }) {
   const [doctorId, setDoctorId] = useState('');
