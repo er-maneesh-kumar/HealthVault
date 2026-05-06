@@ -48,9 +48,7 @@ export default function HomeFeatures() {
         <h2>Everything You Need for <span>Better Healthcare</span></h2>
         <p>A complete ecosystem for patients, doctors, and hospitals — built for the modern age.</p>
       </div>
-      <div className="home-features-img-row">
-        <img src="/images/health_features_icons.png" alt="Healthcare features" className="home-features-banner" />
-      </div>
+
       <div className="home-features-grid">
         {features.map((f, i) => (
           <div className="home-feature-card" key={i} style={{ '--accent': f.color }}>

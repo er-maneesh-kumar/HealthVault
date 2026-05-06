@@ -47,9 +47,7 @@ export default function HomeHowItWorks() {
           </div>
         ))}
       </div>
-      <div className="home-how-img-row">
-        <img src="/images/health_stats_infographic.png" alt="Health platform" className="home-how-img" />
-      </div>
+
     </section>
   );
 }

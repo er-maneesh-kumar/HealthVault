@@ -16,7 +16,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(#E7F0FF,#E8F1FF78);
+    background: linear-gradient(#E7F0FF, #E8F1FF78);
 }
 
 .hero-container svg {
@@ -45,13 +45,15 @@
     background: radial-gradient(circle, rgba(0, 122, 255, 0.6) 0%, rgba(0, 122, 255, 0) 70%);
     filter: blur(50px);
     border-radius: 50%;
-    z-index: -1; /* Places it behind the image */
+    z-index: -1;
+    /* Places it behind the image */
 }
 
 .hero-image {
-    width: 100%;
+    width: 70%;
     height: auto;
     transition: transform 0.45s ease-in-out;
+    border-radius: 10%;
 }
 
 
@@ -72,30 +74,35 @@
     font-size: 1.8em;
     font-weight: 600;
 }
-.hero-text h3{
+
+.hero-text h3 {
     color: #07003B;
     font-size: 0.7em;
 }
+
 .hero-text span {
-/*     
+    /*     
     background: linear-gradient(to right bottom, #010a1b, #35199b, #010a1b);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text; */
     color: #07003B;
 }
+
 .hero-text span1 {
     /*     
         background: linear-gradient(to right bottom, #010a1b, #35199b, #010a1b);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text; */
-        color: #2AA7FF;
-    }
+    color: #2AA7FF;
+}
+
 .hero-text span2 {
     font-size: 0.6em;
     color: #2c3950;
     /* -webkit-text-fill-color: transparent;
     -webkit-background-clip: text; */
 }
+
 .hero-free-trial-button {
     display: flex;
     align-items: center;
